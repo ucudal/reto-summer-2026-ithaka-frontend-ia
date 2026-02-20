@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ithaka-frontend-deployment
+  namespace: ithaka-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ithaka-frontend
+  template:
+    metadata:
+      labels:
+        app: ithaka-frontend
+    spec:
+      containers:
+        - name: ithaka-frontend
+          image: crretoxmas2024.azurecr.io/ithaka-frontend:latest
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "200m"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+      imagePullSecrets:
+        - name: acr-secret
+

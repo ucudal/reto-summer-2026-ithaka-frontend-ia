@@ -1,0 +1,33 @@
+{
+  "name": "testing-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@copilotkit/backend": "^0.37.0",
+    "@copilotkit/react-core": "^1.9.3",
+    "@copilotkit/react-ui": "^1.9.3",
+    "@copilotkit/runtime": "^1.9.3",
+    "cross-spawn": "^7.0.6",
+    "entrepreneur-ai-assistant": "file:entrepreneur-ai-assistant-0.1.0.tgz",
+    "next": "^15.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

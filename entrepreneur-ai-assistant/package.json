@@ -1,0 +1,53 @@
+{
+  "name": "entrepreneur-ai-assistant",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "build:types": "tsc --project tsconfig.build.json",
+    "build:js": "tsup",
+    "build:css": "copy src\\styles.css dist\\",
+    "build": "npm run build:types && npm run build:js && npm run build:css",
+    "pack": "npm run build && npm pack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./runtime": {
+      "import": "./dist/runtime/index.mjs",
+      "require": "./dist/runtime/index.js",
+      "types": "./dist/runtime/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src/styles.css"
+  ],
+  "peerDependencies": {
+    "@copilotkit/react-core": "^1.9.0",
+    "@copilotkit/react-ui": "^1.9.0",
+    "@copilotkit/runtime": "^1.9.0",
+    "openai": "^4.104.0",
+    "react": "^18.2.0",
+    "next": "^15.4.6",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@copilotkit/react-ui": "^1.9.0",
+    "@copilotkit/react-core": "^1.9.0"
+  }
+}

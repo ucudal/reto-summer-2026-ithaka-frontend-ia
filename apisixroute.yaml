@@ -1,0 +1,16 @@
+apiVersion: apisix.apache.org/v2
+kind: ApisixRoute
+metadata:
+  name: ithaka-frontend-route
+  namespace: ithaka-frontend
+spec:
+  http:
+    - name: ithaka-frontend-http
+      match:
+        hosts:
+          - ithaka-frontend.reto-ucu.net
+        paths:
+          - /*
+      backends:
+        - serviceName: ithaka-frontend-service
+          servicePort: 80

@@ -1,0 +1,7 @@
+/* Import CopilotKit styles */
+@import '@copilotkit/react-ui/styles.css';
+
+/* Custom styles for the ChatPopup component */
+.copilotkit-popup {
+  --copilot-kit-primary-color: deepskyblue;
+}

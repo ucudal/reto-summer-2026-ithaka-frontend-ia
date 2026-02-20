@@ -1,0 +1,4 @@
+# Backend URL with CopilotKit integration
+LANGGRAPH_DEPLOYMENT_URL=<url-a-endpoint-de-backend-con-copilotkit>
+# OpenAI API Key (needed for CopilotKit)
+OPENAI_API_KEY=<api-key-de-openai>
