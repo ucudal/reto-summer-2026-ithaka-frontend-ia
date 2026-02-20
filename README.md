@@ -1,4 +1,4 @@
-# Reto Winter 2025 - Ithaka Frontend
+# Reto Summer 2026 - Ithaka Frontend Chatbot
 
 ## Proposito  
 Este proyecto tiene como objetivo desarrollar un componente de asistente conversacional con IA, diseñado para integrarse 
@@ -12,10 +12,9 @@ formulación de la postulacion de proyecto a Ithaka para obtener servicios del d
 
 Este repositorio contiene dos componentes principales:
 ```
-reto-winter-2025-ithaka-frontend/
+reto-summer-2026-ithaka-frontend-chatbot/
 ├── entrepreneur-ai-assistant/     # Librería de componentes
 ├── testing-app/                   # Aplicación de testing
-├── src/                          # Código fuente principal
 └── README.md                     # Este archivo
 ```
 
@@ -45,9 +44,11 @@ reto-winter-2025-ithaka-frontend/
     ```
     Esto generará un archivo `entrepreneur-ai-assistant-0.1.0.tgz` en la carpeta de la librería.
 
-4. Instalar la librería en otro proyecto (por ejemplo, en la `testing-app`):
+   (Estos 3 pasos se pueden omitir ya que en la carpeta testing-app ya se encuentra el .tgz)
+
+5. Instalar la librería en el proyecto (por ejemplo, en la `testing-app`):
     ```bash
-    npm install path/a/el/archivo/entrepreneur-ai-assistant-0.1.0.tgz
+    npm install entrepreneur-ai-assistant-0.1.0.tgz
     ```
 
 ---
